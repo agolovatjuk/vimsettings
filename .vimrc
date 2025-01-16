@@ -6,13 +6,15 @@ call plug#begin()
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
 colorscheme seoul256
 set number
 set wildmenu
 set hlsearch incsearch
-set smartcase
+set smartcase ignorecase
 set tabstop=4
 set shiftwidth=4
 set expandtab smarttab
@@ -26,4 +28,4 @@ imap jk <esc>
 nmap <leader>ev :e $MYVIMRC<cr>
 imap <leader>sv :source $MYVIMRC<cr>
 nnoremap * *N
-
+nnoremap <c-n> ::NERDTreeToggle<cr>
