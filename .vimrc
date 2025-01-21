@@ -12,7 +12,9 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
+let mapleader=","
 colorscheme seoul256
+
 set number
 set wildmenu
 set hlsearch incsearch
@@ -21,7 +23,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab smarttab
 set autoindent
-let mapleader=","
+set fileencodings=utf8,cp1251,koi8r,cp866,ucs-2le
 
 nmap <F9> :TagbarToggle<cr>
 nmap ,<space> :nohlsearch<cr>
@@ -31,4 +33,4 @@ imap jk <esc>
 nmap <leader>ev :e $MYVIMRC<cr>
 imap <leader>sv :source $MYVIMRC<cr>
 nnoremap * *N
-nnoremap <c-n> ::NERDTreeToggle<cr>
+nnoremap <c-n> :NERDTreeToggle<cr>
