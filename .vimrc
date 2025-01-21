@@ -13,6 +13,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
 let mapleader=","
+let &t_EI="\e[2 q" "COMMAND MODE
+let &t_SI="\e[5 q" "INSERT MODE
 colorscheme seoul256
 
 set number
