@@ -3,6 +3,7 @@
 source $VIMRUNTIME/defaults.vim
 
 call plug#begin()
+Plug 'preservim/tagbar'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-commentary'
@@ -22,6 +23,7 @@ set expandtab smarttab
 set autoindent
 let mapleader=","
 
+nmap <F9> :TagbarToggle<cr>
 nmap ,<space> :nohlsearch<cr>
 nmap <c-s> :w<cr>
 imap <c-s> <esc>:w<cr><a>
