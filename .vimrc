@@ -3,13 +3,13 @@
 source $VIMRUNTIME/defaults.vim
 
 call plug#begin()
-Plug 'preservim/tagbar'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/seoul256.vim'
+Plug 'preservim/tagbar'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
 let mapleader=","
